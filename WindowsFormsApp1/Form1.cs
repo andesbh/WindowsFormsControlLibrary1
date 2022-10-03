@@ -20,6 +20,15 @@ namespace WindowsFormsApp1
 
         private void Form1_Load(object sender, EventArgs e)
         {
+
+            List<object> list = new List<object>() {
+                new { name = "Test1", Address = "Test" },
+                new { name = "Test2", Address = "2" },
+                new { name = "Test2", Address = "3" }
+            };
+
+            userControl11.dataGridView1.DataSource = list;
+
             userControl11.dataGridView1_CellDoubleClickEvent += new DataGridViewCellEventHandler(dataGridView1_CellDoubleClick);
          }        
 
