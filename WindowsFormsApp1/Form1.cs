@@ -34,7 +34,8 @@ namespace WindowsFormsApp1
 
         private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            //Your code for the "dataGridView_CellDoubleClick" event
+            var selectedData = ((DataGridView)sender).Rows[e.RowIndex].Cells[e.ColumnIndex].Value;
+            
         }
     }
 }
